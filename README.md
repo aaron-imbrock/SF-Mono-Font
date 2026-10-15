@@ -10,5 +10,6 @@ cp *.otf ~/.local/share/fonts/sf-mono/
 fc-cache -f -v
 
 # Verify the install and the exact name
+
 fc-list : family | grep -i "sf mono" | sort -u
 ```
