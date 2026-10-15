@@ -1,5 +1,14 @@
-Please note that it is forbidden to use this typeface for your commercial project.
 
-## LICENSING
+```
+# Create correct local fonts directory, and copy contents
 
-The typeface is licensed to registered third-party developers for the design and development of applications for iOS, macOS and watchOS
+mkdir -p ~/.local/share/fonts/sf-mono
+cp *.otf ~/.local/share/fonts/sf-mono/
+
+# Regenerate the font cache
+
+fc-cache -f -v
+
+# Verify the install and the exact name
+fc-list : family | grep -i "sf mono" | sort -u
+```
