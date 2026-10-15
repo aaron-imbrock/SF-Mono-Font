@@ -1,3 +1,5 @@
+Installation
+---
 
 ```
 # Create correct local fonts directory, and copy contents
